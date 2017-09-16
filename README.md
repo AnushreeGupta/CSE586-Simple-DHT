@@ -10,6 +10,6 @@ App has an activity and a content provider. However, the main activity is used f
 
 Apart from above funtions the app is be able to handle node joins. Only the first emulator instance (i.e., emulator-5554) receives all new node join requests. Upon completing a new node join request, affected nodes are updated with their predecessor and successor pointers correctly. Below are the assumptions taken into consideration while writing the content provider. 
 
-a. A node join will only happen once the system completely processes the previous join i.e., no concurrent node joins.
-b. Insert/query requests will be issued only with a stable system thus while a node is joining no insert/query requests are recieved.
-c. The content provider does not need to handle node leaves/failures. 
+1. A node join will only happen once the system completely processes the previous join i.e., no concurrent node joins.
+2. Insert/query requests will be issued only with a stable system thus while a node is joining no insert/query requests are recieved.
+3. The content provider does not need to handle node leaves/failures. 
